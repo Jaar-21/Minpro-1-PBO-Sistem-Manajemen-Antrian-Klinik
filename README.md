@@ -19,7 +19,7 @@ Sistem Manajemen Antiran Klinik merupakan program berbasis Java yang digunakan u
 
 Fitur ini digunakan untuk menampilkan seluruh data pasien yang telah tersimpan di dalam sistem.
 
-Data yang ditampilkan meliputi **ID pasien, nama, umur, dan nomor telepon**. Jika belum terdapat data pasien, sistem akan memberikan informasi bahwa belum ada data pasien.
+Data yang ditampilkan meliputi ID pasien, nama, umur, dan nomor telepon. Jika belum terdapat data pasien, sistem akan memberikan informasi bahwa belum ada data pasien.
 
 **2. Tambahkan Pasien**
 
@@ -38,7 +38,7 @@ Data pasien yang telah dimasukkan kemudian disimpan ke dalam `ArrayList`.
 
 Fitur ini digunakan untuk mengubah data pasien yang sudah tersimpan. 
 
-Pengguna terlebih dahulu memasukkan **ID pasien** yang ingin diubah. Setelah itu, pengguna dapat memasukkan **nama, umur, dan nomor telepon baru**. Jika ID ditemukan, data pasien akan diperbarui. Jika ID tidak ditemukan, sistem akan menampilkan pesan bahwa data pasien tidak ditemukan.
+Pengguna terlebih dahulu memasukkan ID pasien yang ingin diubah. Setelah itu, pengguna dapat memasukkan nama, umur, dan nomor telepon baru. Jika ID ditemukan, data pasien akan diperbarui. Jika ID tidak ditemukan, sistem akan menampilkan pesan bahwa data pasien tidak ditemukan.
 
 **4. Hapus Pasien**
 
@@ -48,9 +48,9 @@ Pengguna memasukkan **ID pasien** yang ingin dihapus. Sistem akan mencari pasien
 
 **5. Panggil Pasien**
 
-Fitur ini digunakan untuk memanggil pasien berdasarkan **ID pasien**.
+Fitur ini digunakan untuk memanggil pasien berdasarkan ID pasien.
 
-Ketika pasien berhasil ditemukan, sistem akan menampilkan pesan panggilan atas nama pasien dan kemudian **menghapus pasien dari daftar antrian** karena pasien telah dipanggil untuk memasuki ruangan.
+Ketika pasien berhasil ditemukan, sistem akan menampilkan pesan panggilan atas nama pasien dan kemudian menghapus pasien dari daftar antrian karena pasien telah dipanggil untuk memasuki ruangan.
 
 **6. Keluar**
 
@@ -61,7 +61,7 @@ Ketika pengguna memilih menu keluar, perulangan program akan dihentikan dan sist
 ## ⬆️ ALUR PROGRAM
 
 1. **Memulai Program**  
-   Program dijalankan melalui `Main.java` dan sistem menampilkan menu utama.
+   Program dijalankan melalui Main.java dan sistem menampilkan menu utama.
 
 2. **Memilih Menu**  
    Pengguna memilih salah satu dari enam menu yang tersedia menggunakan input angka.
@@ -88,12 +88,12 @@ Ketika pengguna memilih menu keluar, perulangan program akan dihentikan dan sist
    Setelah menjalankan suatu fitur, sistem kembali ke menu utama sehingga pengguna dapat melakukan proses lainnya.
 
 10. **Mengakhiri Program**  
-    Program berhenti ketika pengguna memilih menu **6. Keluar**.
+    Program berhenti ketika pengguna memilih menu 6.
 
 
 ## 📑 STRUKTUR CLASS
 
-Program terdiri dari tiga class utama di luar entry point dan satu class utama sebagai entry point.
+Program terdiri dari tiga class di luar entry point dan satu class utama sebagai entry point.
 
 ```text
 Source Packages
@@ -107,7 +107,7 @@ Source Packages
 
 ### 1. `Pasien.java` 
 
-Class `Pasien` digunakan sebagai **model** untuk menyimpan data pasien. Class ini memiliki empat atribut yaitu ID pasien, nama, umur, dan nomor telepon.
+Class `Pasien` digunakan sebagai model untuk menyimpan data pasien. Class ini memiliki empat atribut yaitu ID pasien, nama, umur, dan nomor telepon.
 
 ```java
 package com.mycompany.klinik;
@@ -166,7 +166,7 @@ public class Pasien {
 
 ### 2. `PasienCRUD.java`
 
-Class `PasienCRUD` digunakan untuk mengelola data pasien dan menjalankan proses **Create, Read, Update, Delete (CRUD)**.
+Class `PasienCRUD` digunakan untuk mengelola data pasien dan menjalankan proses Create, Read, Update, Delete.
 
 Class ini menggunakan `ArrayList` untuk menyimpan kumpulan objek pasien.
 
@@ -270,7 +270,7 @@ public class PasienCRUD {
 
 ### 3. `ValidasiInput.java`
 
-Class `ValidasiInput` digunakan untuk melakukan **validasi input angka**. Jika pengguna memasukkan input selain angka, sistem akan meminta pengguna memasukkan angka kembali.
+Class `ValidasiInput` digunakan untuk melakukan validasi input angka. Jika pengguna memasukkan input selain angka, sistem akan meminta pengguna memasukkan angka kembali.
 
 ```java
 package com.mycompany.klinik;
@@ -298,7 +298,7 @@ public class ValidasiInput {
 
 ### 4. `Main.java`
 
-Class `Main` merupakan class utama yang digunakan untuk menjalankan program. Class ini menampilkan menu, menerima input pengguna, menggunakan percabangan `switch`, serta menggunakan perulangan `while` agar program terus berjalan sampai pengguna memilih keluar.
+Class Main merupakan class utama yang digunakan untuk menjalankan program. Class ini menampilkan menu, menerima input pengguna, menggunakan percabangan switch, serta menggunakan perulangan while agar program terus berjalan sampai pengguna memilih keluar.
 
 ```java
 package com.mycompany.klinik;
@@ -430,7 +430,7 @@ public class Main {
 Program ini juga menerapkan beberapa nilai tambah dalam Pemrograman Berorientasi Objek.
 
 ### Access Modifier
-Access modifier `private` digunakan pada atribut class `Pasien` agar data pasien tidak dapat diakses atau diubah secara langsung dari luar class.
+Access modifier `private` digunakan pada atribut class Pasien agar data pasien tidak dapat diakses atau diubah secara langsung dari luar class.
 
 ```java
 private int idPasien;
@@ -440,7 +440,7 @@ private String noTelepon;
 ```
 
 ### Encapsulation
-Encapsulation digunakan untuk **membungkus dan melindungi data di dalam class** agar tidak dapat diakses atau diubah secara langsung dari luar class. Pada program ini, atribut pada class `Pasien` dibuat `private`, sehingga untuk mengambil atau mengubah data digunakan **getter dan setter**.
+Encapsulation digunakan untuk **membungkus dan melindungi data di dalam class** agar tidak dapat diakses atau diubah secara langsung dari luar class. Pada program ini, atribut pada class Pasien dibuat `private`, sehingga untuk mengambil atau mengubah data digunakan getter dan setter.
 
 
 ```java
