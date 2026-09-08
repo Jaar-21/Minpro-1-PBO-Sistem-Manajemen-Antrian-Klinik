@@ -1,7 +1,7 @@
 # 🏥 SISTEM MANAJEMEN ANTRIAN KLINIK 💉
 
 ## 📖 DESKRIPSI SINGKAT
-Sistem Manajemen Antiran Klinik merupakan program berbasis Java yang digunakan untuk mengelola data pasien pada sebuah klinik secara sederhana melalui terminal/console. Program ini memungkinkan pengguna untuk melakukan proses CRUD (Create, Read, Update, Delete) terhadap data pasien, serta menyediakan fitur panggil pasien untuk menghapus pasien yang telah dipanggil dari daftar antrian. Program dibuat dengan menerapkan konsep dasar Pemrograman Berorientasi Objek (PBO) seperti class, object, constructor, access modifier, encapsulation, ArrayList, branching, looping, dan validasi input.
+Sistem Manajemen Antiran Klinik merupakan program untuk mengelola data pasien pada sebuah klinik secara sederhana melalui terminal. Program ini memungkinkan pengguna untuk melakukan proses CRUD (Create, Read, Update, Delete) terhadap data pasien, serta menyediakan fitur panggil pasien untuk menghapus pasien yang telah dipanggil dari daftar antrian. Program dibuat dengan menerapkan class, object, constructor, access modifier, encapsulation, ArrayList, branching, looping, dan validasi input.
 
 ## ⚙️ FITUR PROGRAM
 
